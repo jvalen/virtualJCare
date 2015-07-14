@@ -1,0 +1,209 @@
+{
+	"physics": {
+    "gravity": 300,
+		"walk": {
+			"speed": 300
+		},
+		"jump": {
+			"velocity": {
+				"y": -350
+			}
+		}
+	},
+	"decreaseStatAmount": 2,
+	"rockFrecuencyDivisor": 6,
+	"redAlertLimit": 20,
+	"timers": {
+		"rockInterval": 16,
+		"clothChangeArray": [10, 30, 50, 70, 90, 110, 130, 150, 170]
+	},
+	"costumes": {
+		"availabilityArray": [
+				{"part": "body", "id": 1},
+				{"part": "body", "id": 2},
+				{"part": "body", "id": 3},
+				{"part": "body", "id": 4},
+				{"part": "head", "id": 1},
+				{"part": "head", "id": 2},
+				{"part": "head", "id": 3},
+				{"part": "head", "id": 4}
+		],
+		"headAmount": 5,
+		"bodyAmount": 5
+	},
+	"character": {
+		"spriteName": "bodyHero",
+		"initialStats": {
+			"health": 50,
+			"fun": 50,
+			"nutrition": 50
+		},
+		"frame": {
+			"head": 0,
+			"body": 4
+		},
+		"nameRelation": {
+			"head": ["Boring", "Saiyan", "Robo", "Ninja", "Virtual", "Megazord"],
+			"body":	["Boring", "Gnulinux", "Turtle", "Clark", "Pajamas", "J"]
+		},
+		"animations": {
+			"body": {
+				"framesPerRow": 3,
+				"animations": {
+					"walk": {
+						"frameRate": 12,
+						"frameSecuence": [0, 1, 2, 3],
+						"loop": true},
+					"jump": {
+						"frameRate": 5,
+						"frameSecuence": [5, 4],
+						"loop": false}
+				}
+			},
+			"head": {
+				"framesPerRow": 4,
+				"animations": {
+					"eat": {
+						"frameRate": 7,
+						"frameSecuence": [1, 0, 1, 0],
+						"loop": false},
+					"annoyed": {
+						"frameRate": 1,
+						"frameSecuence": [3, 0],
+						"loop": false}
+				}
+			}
+		},
+		"headSpritePosition": [0, 4, 8, 12, 16, 20],
+		"bodySpritePosition": [0, 8, 16, 24, 32, 40],
+		"gravity": 1500,
+		"maxSpeedY": 500
+	},
+	"items": {
+    "width": 50,
+		"gravity": 1100,
+		"maxVelocity": 800,
+		"rock": {
+			"rockItemId": 4,
+			"impact": {
+				"min": -8,
+				"max": -1
+			},
+			"velocity": {
+				"x": {
+					"min": 300,
+					"max": -300
+				},
+				"y": {
+					"min": -200,
+					"max": -200
+				}
+			}
+		}
+	},
+	"points": {
+		"boost": {
+			"health": {
+				"min": 10,
+				"max": 20
+			},
+			"fun": {
+				"min": 10,
+				"max": 20
+			},
+			"nutrition": {
+				"min": 10,
+				"max": 20
+			}
+		}
+	},
+	"buttons": {
+		"sizeDivisor": 4,
+		"info": {
+			"collection": [
+				{
+						"name": "fruit",
+						"spritesheet": "buttons",
+						"order": 1,
+						"offsetY": -45,
+						"frame": 0,
+						"type": 0,
+						"customParams": {
+							"health": 2,
+							"fun": -4,
+							"nutrition": 5
+						}
+				},
+				{
+					"name": "medicine",
+					"spritesheet": "buttons",
+					"order": 2,
+					"offsetY": -45,
+					"frame": 1,
+					"type": 1,
+					"customParams": {
+						"health": 5,
+						"fun": -1,
+						"nutrition": -1
+						}
+				},
+				{
+					"name": "chocolate",
+					"spritesheet": "buttons",
+					"order": 3,
+					"offsetY": -45,
+					"frame": 2,
+					"type": 2,
+					"customParams": {
+						"health": -4,
+						"fun": 5,
+						"nutrition": 2
+						}
+				},
+				{
+					"name": "skipRope",
+					"spritesheet": "buttons",
+					"order": 4,
+					"offsetY": -45,
+					"frame": 3,
+					"type": 3,
+					"customParams": {
+						"health": 1,
+						"fun": 4,
+						"nutrition": -2
+						}
+				}
+			]
+
+		}
+	},
+	"mainMenu": {
+		"title": "virtualJCare",
+		"levelFarSpeed": 2,
+		"levelMidSpeed": 8,
+		"levelCloseSpeed": 4000,
+		"helpmeSpeed": 16000
+	},
+	"text": {
+		"en": {
+			"sick": "J got sick",
+			"hungry": "J is hungry",
+			"bored": "J is bored",
+			"tryAgain": "Try Again!",
+			"gameOver": "Game Over",
+			"score": "Score",
+			"top": "Top",
+			"health": "Health",
+			"fun": "Fun",
+			"nutrition": "Nutrition",
+			"touchScreen": "Touch screen to start",
+			"youHaveGot": "You've got a",
+			"itsA": "It's a",
+			"takingCareDuring": "I've taken care of J during",
+			"playAt": "Play at",
+			"helpMessage": "Hi! This is J, can you help me?"
+		}
+	},
+	"url": "http://www.jvrpath.com/virtualjcare",
+	"hashTag": "#virtualJCareGame"
+}

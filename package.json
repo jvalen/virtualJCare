@@ -1,0 +1,34 @@
+{
+  "name": "virtualJCare",
+  "description": "HTML5 mobile game made with Phaser",
+  "readme": "",
+  "repository": "",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "*",
+    "gulp": "*",
+    "gulp-util": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-download": "*",
+    "gulp-rename": "*",
+    "gulp-minify-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-processhtml": "*",
+    "gulp-jshint": "*",
+    "gulp-uglify": "*",
+    "gulp-connect": "*",
+    "gulp-watch": "*",
+    "tiny-lr": "*",
+    "gulp-cache-breaker": "0.0.3",
+    "gulp-replace": "~0.5.3",
+    "run-sequence": "~1.1.1"
+  },
+  "scripts": {
+    "post-install": "node ./node_modules/bower/bin/bower install",
+    "start": "node ./node_modules/gulp/bin/gulp.js",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "lint": "node ./node_modules/gulp/bin/gulp.js lint"
+  }
+}
