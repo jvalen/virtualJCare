@@ -34,9 +34,9 @@
 	"character": {
 		"spriteName": "bodyHero",
 		"initialStats": {
-			"health": 50,
-			"fun": 50,
-			"nutrition": 50
+			"health": 40,
+			"fun": 40,
+			"nutrition": 40
 		},
 		"frame": {
 			"head": 0,
@@ -104,16 +104,16 @@
 	"points": {
 		"boost": {
 			"health": {
-				"min": 10,
-				"max": 20
+				"min": 8,
+				"max": 15
 			},
 			"fun": {
-				"min": 10,
-				"max": 20
+				"min": 8,
+				"max": 15
 			},
 			"nutrition": {
-				"min": 10,
-				"max": 20
+				"min": 8,
+				"max": 15
 			}
 		}
 	},

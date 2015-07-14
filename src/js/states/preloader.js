@@ -27,7 +27,7 @@
         this.load.image('introFar', 'assets/images/intro_far.png');
         this.load.image('introMid', 'assets/images/intro_mid.png');
         this.load.image('introClose', 'assets/images/intro_close.png');
-        this.load.image('introJFace', 'assets/images/intro_jFace.png');        
+        this.load.image('introJFace', 'assets/images/intro_jFace.png');
 
         this.load.image('auraParticle', 'assets/images/aura-particle.png');
 
@@ -60,8 +60,10 @@
         ['assets/sounds/aura.ogg', 'assets/sounds/aura.mp3']);
         this.game.load.audio('gameover',
         ['assets/sounds/gameover.ogg', 'assets/sounds/gameover.mp3']);
-        this.game.load.audio('explosion', 'assets/sounds/explosion.ogg');
-        this.game.load.audio('hit', 'assets/sounds/hit.wav');
+        this.game.load.audio('explosion',
+        ['assets/sounds/explosion.ogg', 'assets/sounds/explosion.mp3']);
+        this.game.load.audio('hit',
+        ['assets/sounds/hit.ogg', 'assets/sounds/hit.mp3']);
 
         //load level data
         this.load.text('conf', 'assets/data/conf.json' + stamp);
