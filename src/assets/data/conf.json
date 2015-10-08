@@ -34,9 +34,9 @@
 	"character": {
 		"spriteName": "bodyHero",
 		"initialStats": {
-			"health": 40,
-			"fun": 40,
-			"nutrition": 40
+			"health": 50,
+			"fun": 50,
+			"nutrition": 50
 		},
 		"frame": {
 			"head": 0,
