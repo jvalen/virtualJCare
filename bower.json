@@ -1,10 +1,8 @@
 {
-  "name": "interculturehead",
-  "version": "0.0.0",
-  "authors": [
-    ""
-  ],
+  "name": "virtualJCare",
+  "version": "1.0.0",
+  "authors": ["Javier Valencia Romero"],
   "dependencies": {
-    "phaser-official": "latest"
+    "phaser-official": "2.4.3"
   }
 }
