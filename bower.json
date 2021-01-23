@@ -1,8 +1,0 @@
-{
-  "name": "virtualJCare",
-  "version": "1.0.0",
-  "authors": ["Javier Valencia Romero"],
-  "dependencies": {
-    "phaser-official": "2.4.3"
-  }
-}
