@@ -24,87 +24,82 @@ export default class extends Phaser.State {
     this.load.onLoadComplete.addOnce(this.onLoadComplete, this);
     this.load.setPreloadSprite(this.asset);
 
-    this.load.image("introFar", "./src/assets/images/intro_far.png");
-    this.load.image("introMid", "./src/assets/images/intro_mid.png");
-    this.load.image("introClose", "./src/assets/images/intro_close.png");
-    this.load.image("introJFace", "./src/assets/images/intro_jFace.png");
+    this.load.image("introFar", "./assets/images/intro_far.png");
+    this.load.image("introMid", "./assets/images/intro_mid.png");
+    this.load.image("introClose", "./assets/images/intro_close.png");
+    this.load.image("introJFace", "./assets/images/intro_jFace.png");
 
-    this.load.image("auraParticle", "./src/assets/images/aura-particle.png");
+    this.load.image("auraParticle", "./assets/images/aura-particle.png");
 
     this.load.spritesheet(
       "headHero",
-      "./src/assets/sprites/head-sprite.png",
+      "./assets/sprites/head-sprite.png",
       80,
       80
     );
     this.load.spritesheet(
       "bodyHero",
-      "./src/assets/sprites/body-sprite.png",
+      "./assets/sprites/body-sprite.png",
       80,
       80
     );
-    this.load.spritesheet("items", "./src/assets/sprites/items.png", 50, 50);
-    this.load.spritesheet(
-      "buttons",
-      "./src/assets/sprites/buttons.png",
-      70,
-      70
-    );
+    this.load.spritesheet("items", "./assets/sprites/items.png", 50, 50);
+    this.load.spritesheet("buttons", "./assets/sprites/buttons.png", 70, 70);
     this.load.spritesheet(
       "button-retry",
-      "./src/assets/sprites/button-retry.png",
+      "./assets/sprites/button-retry.png",
       225,
       112
     );
     this.load.spritesheet(
       "button-fb",
-      "./src/assets/images/facebook_button.png",
+      "./assets/images/facebook_button.png",
       64,
       64
     );
     this.load.spritesheet(
       "button-twitter",
-      "./src/assets/images/twitter_button.png",
+      "./assets/images/twitter_button.png",
       64,
       64
     );
 
-    this.load.image("roomKid", "./src/assets/images/roomKid.jpg");
-    this.load.image("panelTime", "./src/assets/images/panel-time.png");
+    this.load.image("roomKid", "./assets/images/roomKid.jpg");
+    this.load.image("panelTime", "./assets/images/panel-time.png");
 
     this.game.load.audio("kidLevelMusic", [
-      "./src/assets/sounds/kidLevel.ogg",
-      "./src/assets/sounds/kidLevel.mp3",
+      "./assets/sounds/kidLevel.ogg",
+      "./assets/sounds/kidLevel.mp3",
     ]);
     this.game.load.audio("mainMenuMusic", [
-      "./src/assets/sounds/mainMenu.ogg",
-      "./src/assets/sounds/mainMenu.mp3",
+      "./assets/sounds/mainMenu.ogg",
+      "./assets/sounds/mainMenu.mp3",
     ]);
     this.game.load.audio("aura", [
-      "./src/assets/sounds/aura.ogg",
-      "./src/assets/sounds/aura.mp3",
+      "./assets/sounds/aura.ogg",
+      "./assets/sounds/aura.mp3",
     ]);
     this.game.load.audio("gameover", [
-      "./src/assets/sounds/gameover.ogg",
-      "./src/assets/sounds/gameover.mp3",
+      "./assets/sounds/gameover.ogg",
+      "./assets/sounds/gameover.mp3",
     ]);
     this.game.load.audio("explosion", [
-      "./src/assets/sounds/explosion.ogg",
-      "./src/assets/sounds/explosion.mp3",
+      "./assets/sounds/explosion.ogg",
+      "./assets/sounds/explosion.mp3",
     ]);
     this.game.load.audio("hit", [
-      "./src/assets/sounds/hit.ogg",
-      "./src/assets/sounds/hit.mp3",
+      "./assets/sounds/hit.ogg",
+      "./assets/sounds/hit.mp3",
     ]);
 
     //load level data
-    this.load.text("conf", "./src/assets/data/conf.json" + stamp);
+    this.load.text("conf", "./assets/data/conf.json" + stamp);
 
     //Load font
     this.load.bitmapFont(
       "minecraftia",
-      "./src/assets/minecraftia.png",
-      "./src/assets/minecraftia.xml"
+      "./assets/minecraftia.png",
+      "./assets/minecraftia.xml"
     );
   }
 

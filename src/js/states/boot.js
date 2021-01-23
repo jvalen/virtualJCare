@@ -7,7 +7,7 @@ import Phaser from "phaser";
 
 export default class extends Phaser.State {
   preload() {
-    this.load.image("preloader", "./src/assets/images/intro_jFace.png");
+    this.load.image("preloader", "./assets/images/intro_jFace.png");
   }
 
   create() {
